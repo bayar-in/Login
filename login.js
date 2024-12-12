@@ -24,28 +24,12 @@ document
     if (response.ok) {
       localStorage.setItem("isLoggedIn", true);
       localStorage.setItem("token", responseData.token);
-      
-      // Use SweetAlert for success message
-      swal({
-        title: "Login Berhasil",
-        text: "Anda akan diarahkan ke dashboard.",
-        icon: "success",
-        button: "OK",
-      }).then(() => {
-        window.location.replace("./../dashboard/dashboard.html");
-      });
-    
+      window.location.replace("./../dashboard/dashboard.html");
+      alert("Login berhasil");
       console.log(responseData);
     } else {
-      // Use SweetAlert for error message
-      swal({
-        title: "Login Gagal",
-        text: responseData.message || "Periksa kembali data Anda.",
-        icon: "error",
-        button: "OK",
-      }).then(() => {
-        console.log(responseData); // untuk memeriksa error dari server
-      });
+      alert(responseData.message || "Login gagal, periksa kembali data Anda.");
+      console.log(responseData); // untuk memeriksa error dari server
     }
   });
 
