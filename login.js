@@ -26,7 +26,7 @@ document
       localStorage.setItem("token", responseData.token);
       
       // Use SweetAlert for success message
-      swal({
+      Swal.fire({
         title: "Login Berhasil",
         text: "Anda akan diarahkan ke dashboard.",
         icon: "success",
@@ -38,7 +38,7 @@ document
       console.log(responseData);
     } else {
       // Use SweetAlert for error message
-      swal({
+      Swal.fire({
         title: "Login Gagal",
         text: responseData.message || "Periksa kembali data Anda.",
         icon: "error",
