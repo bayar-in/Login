@@ -32,7 +32,7 @@ document
         icon: "success",
         button: "OK",
       }).then(() => {
-        window.location.replace("./../dashboard/dashboard.html");
+        window.location.replace("/dashboard");
       });
     
       console.log(responseData);
