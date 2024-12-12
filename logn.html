@@ -4,13 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign In</title>
-    <link rel="stylesheet" href="./src/page/login/login.css" />
+    <link rel="stylesheet" href="./login.css" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B66QPE5BY6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-B66QPE5BY6');
+    </script>
   </head>
   <body>
     <section class="container">
       <div class="image-section">
         <div class="image-wrapper">
-          <img src="./assets/img/gradient.png" alt="" />
+          <img src="/assets/img/gradient.png" alt="" />
         </div>
 
         <div class="content-container">
@@ -69,12 +78,12 @@
           <div class="or-divider">or</div>
 
           <button class="google-signin">
-            <a href="./src/page/logwauth/logwauth.html"><span>Login Dengan WhatsAuth</span></a>
+            <a href="./../logwhatsauth/logwauth.html"><span>Login Dengan WhatsAuth</span></a>
           </button>
         </div>
       </div>
     </section>
-    <script src="./src/page/login/login.js" type="module"></script>
+    <script src="./login.js" type="module"></script>
   </body>
 </html>
 <!--  To DO Next, Add Required Form
